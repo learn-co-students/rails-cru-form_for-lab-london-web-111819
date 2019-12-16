@@ -7,7 +7,14 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<%=link_to "| All artists", artists_path%>
+<%=link_to "| New artist", new_artist_path%>
 
+<%=link_to "| All genres", genres_path%>
+<%=link_to "| New genre", new_genre_path%>
+
+<%=link_to "| All songs", songs_path%>
+<%=link_to "| New song", new_song_path%>
 <%= yield %>
 
 </body>

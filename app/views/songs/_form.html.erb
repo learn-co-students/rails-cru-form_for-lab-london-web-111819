@@ -1,0 +1,13 @@
+<h1>Song Form</h1>
+<%=form_for(@song) do |f|%>
+<%=f.label :name%>
+<%=f.text_field :name%><br>
+
+<%=f.label :Artist%>
+<%= f.collection_radio_buttons :artist_id, Artist.all, :id, :name %><br>
+
+<%=f.label :Genre%>
+<%= f.collection_radio_buttons :genre_id, Genre.all, :id, :name %><br>
+
+<%=f.submit @button_name%>
+<% end %>
